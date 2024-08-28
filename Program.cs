@@ -34,8 +34,8 @@ namespace NoviceChallenges
         // 1. Return the sum of two numbers.
         public static int Add(int a, int b)
         {
-            int c = a + b;
-            return c;
+            int total = a + b;
+            return total;
         }
 
         // 2. Given an integer, return true if it's even, else return false.
@@ -53,15 +53,15 @@ namespace NoviceChallenges
         {
             // HINT: You might want to use Math.Max function.
             int d = Math.Max(a, b);
-            int e = Math.Max(d, c);
-            return e;
+            int max = Math.Max(d, c);
+            return max;
         }
 
         // 4. Return the length of the given string.
         public static int StringLength(string s)
         {
-            int num = s.Length;
-            return num;
+            int length = s.Length;
+            return length;
         }
 
         // 5. Return true if the string starts with "Hello", otherwise return false.
@@ -145,7 +145,6 @@ namespace NoviceChallenges
             // TODO: Determine if the string is a palindrome.
             char[] some = s.ToCharArray();
             Array.Reverse(some);
-            char[] newsome = s.ToCharArray();
             string newStr = new string(some);
             if(newStr.ToLower() == s.ToLower())
             {
@@ -170,9 +169,9 @@ namespace NoviceChallenges
         public static int CharCount(string s, char c)
         {
             int count = 0;
-            foreach(char d in s)
+            foreach(char letter in s)
             {
-                if(d == c)
+                if(letter == c)
                 {
                     count++;
                 }
