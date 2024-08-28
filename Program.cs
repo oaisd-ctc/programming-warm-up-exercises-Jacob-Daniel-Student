@@ -76,6 +76,7 @@ namespace NoviceChallenges
         }
 
         // 6. Reverse a given string.
+        // Declares a char array equal to the original string and reverses it.  
         public static string ReverseString(string s)
         {
             char[] charArray = s.ToCharArray();
@@ -84,6 +85,7 @@ namespace NoviceChallenges
         }
 
         // 7. Return the factorial of a number.
+        //Loops through each number leading up to n and multiplies that by fact then returns fact as the total.  
         public static int Factorial(int n)
         {
             int fact = 1;
@@ -96,6 +98,7 @@ namespace NoviceChallenges
         }
 
         // 8. Check if a number is a prime number.
+        // Loops through each number starting at 2 and checks if it can still be a whole number if divided by.  If not it will check if the number can be divided by itself and return true if that is the case. 
         public static bool IsPrime(int number)
         {
             if (number <= 1) return false;
@@ -111,6 +114,7 @@ namespace NoviceChallenges
         }
 
         // 9. Return the nth Fibonacci number.
+        //Calculates the nth fibonacci number by calculating each number 1 before n and adding that to every number 2 before n.  
         public static int Fibonacci(int n)
         { 
             // TODO: Calculate the nth Fibonacci number.
@@ -125,6 +129,7 @@ namespace NoviceChallenges
         }
 
         // 10. Given an array of integers, return the largest number.
+        // Loops through each number in an array and compares it to the last to find the largest number.  
         public static int LargestInArray(int[] numbers)
         {
             int largest = numbers[0];
@@ -140,6 +145,7 @@ namespace NoviceChallenges
         }
 
         // 11. Check if a string is a palindrome (reads the same forward and backward).
+        // convertes the s into a character array, reverses that array, and turns that into a new string.  It then checks it it is equal or not returning true or false 
         public static bool IsPalindrome(string s)
         {
             // TODO: Determine if the string is a palindrome.
@@ -154,6 +160,7 @@ namespace NoviceChallenges
         }
 
         // 12. Given an array of integers, return the sum of its elements.
+        //Loops through each number in the array and adds it to a sum.  
         public static int ArraySum(int[] numbers)
         {
             int sum = 0;
@@ -166,6 +173,7 @@ namespace NoviceChallenges
         }
 
         // 13. Given a string, count how many times a specified character appears in it.
+        // Uses a foreach loop to cycle through each character and check if it is equal to the character in the string.  It then adds 1 to the count when done it will return the count
         public static int CharCount(string s, char c)
         {
             int count = 0;
@@ -187,6 +195,7 @@ namespace NoviceChallenges
         }
 
         // 15. Given a string, return a new string where the first and last characters have been swapped.
+        // Sets the first and last characters of the original string and takes a new char array where the lastchar is set the the firstchar it then returns the corrected string
         public static string SwapEnds(string s)
         {
             if (s.Length <= 1) return s;
